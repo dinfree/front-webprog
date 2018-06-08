@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function change(obj) {
+            obj.setAttribute('style','background-color:darkorange;padding:10px;width:200px');
+            //document.getElementById('m1').setAttribute('style','background-color:darkorange;padding:10px;width:200px');
+        }
+        function rchange(obj) {
+            obj.removeAttribute('style');
+        }
+        function regist() {
+            var name = document.f1.uname.value;
+            var gender = document.f1.gender.value;
+            var msg = document.f1.msg.value;
+            document.getElementById("result").innerHTML = name +"'s gender is "+ gender + " and leave message: "+msg;
+        }
+    </script>
+</head>
+
+<body>
+
+    <h2>w10p4.html</h2>
+    <hr>
+    <form name="f1" action="#">
+        name: <input type="text" onfocus="change(this)" onblur="rchange(this)" name="uname"><br>
+        gender: <select name="gender">
+                <option value="M">Male</option>
+                <option value="F">Female</option>
+                </select> <br>
+        message: <input id="m1" type="text" name="msg" size="30" onfocus="change(this)" onblur="rchange(this)"><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <div id="result"> </div>
+</body>
+</html>

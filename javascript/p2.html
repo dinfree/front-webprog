@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        var sales = 'Toyota';
+
+        function carTypes(name) {
+            if (name == 'Honda') {
+                return name;
+            } else {
+                return "Sorry, we don't sell " + name + ".";
+            }
+        }
+
+        var car = { myCar: 'Saturn', getCar: carTypes('Honda'), special: sales };
+
+        console.log(car.myCar);   // Saturn
+        console.log(car.getCar);  // Honda
+        console.log(car.special); // Toyota
+
+        function myFunction() {
+            document.getElementById("result").innerHTML = car.special;
+        }
+    </script>
+</head>
+
+<body>
+
+    <h2>w9p2.html</h2>
+    <hr>
+    <button type="button" onclick="myFunction()">Get Result</button>
+
+    <p id="result"> </p>
+</body>
+</html>

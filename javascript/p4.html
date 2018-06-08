@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function Person(name, age) {
+            this.name = name;
+            this.age = age;
+        }
+
+        function runApp() {
+            var p1 = new Person('Hwang','48');
+            document.getElementById("result").innerHTML = p1.name +" is "+p1.age+" years old";
+        }
+    </script>
+</head>
+
+<body>
+
+    <h2>w9p4.html</h2>
+    <hr>
+    <button type="button" onclick="runApp()">Run App</button>
+
+    <p id="result"> </p>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+    <head>
+        <style>
+            nav ul {
+                width: 100%;
+                background-color: rgba(44, 42, 39, 0.983);
+                list-style-type: none;
+                /* 마진 패딩 지정하지 않으면 브라우저 기본 스타일을 따라 설정되므로 오버라이딩 필요 */
+                margin: 0;
+                padding: 0;                
+            }
+            /* li 는 블록요소인데 inline-block 으로 인라인속성 부여해서 나란히 배치*/
+            nav ul li {
+                display: inline-block;
+            }
+            /* a 는 인라인 요소로 width, height 는 적용안됨 따라서 padding 을 이용해 크기 지정 */
+            nav ul li a {
+                text-decoration: none;
+                color: white;               
+                padding: 20px 16px;
+            }
+
+            .home {
+                background-color: darkorange;
+                width: 100px;
+                text-align: center;
+                font-weight: bold;
+            }
+
+            ul {
+                width: 200px;
+                background-color: rgba(225, 220, 213, 0.983);
+                list-style-type: none;
+                /* 마진 패딩 지정하지 않으면 브라우저 기본 스타일을 따라 설정되므로 오버라이딩 필요 */
+                margin: 20px 0;
+                padding: 0;
+            }
+
+            li a {
+                display: block;
+                padding: 8px 16px;
+                text-decoration: none;
+                color: black;
+            }
+            a:hover:not(.home) {
+                background-color: rgba(157, 155, 152, 0.983);
+                color: white;
+            }
+        </style>
+        <title>navbar test</title>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="#">Menu1</a></li>
+                <li><a href="#">Menu2</a></li>
+                <li><a href="#">Menu3</a></li>
+                <li><a href="#">Menu4</a></li>
+                <li style="float: right;"><a class="home" href="#">Home</a></li>                        
+            </ul>
+        </nav>
+        <ul>
+            <li><a href="#">Menu1</a></li>
+            <li><a href="#">Menu2</a></li>
+            <li><a href="#">Menu3</a></li>
+            <li><a href="#">Menu4</a></li>
+            <li><a href="#">Menu5</a></li>
+        </ul>
+    </body>
+</html>

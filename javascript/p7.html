@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .msg {
+            background-color:darkorange;
+            padding:10px;
+            width:200px;
+            text-align:center;
+        }
+    </style>
+    <script>
+        function runApp() {
+            obj = document.getElementById('banner');
+            //obj.setAttribute('style','background-color:darkorange;padding:10px;width:200px;text-align:center;');
+            //위와 같은 코드를 개선 하는 방법은 ? 직접 시도해 볼것
+            obj.setAttribute('class','msg');
+        }
+    </script>
+</head>
+
+<body>
+    <h2>w9p4.html</h2>
+    <hr>
+    <button type="button" onclick="runApp();">Run my JS App</button>
+    <p></p>
+
+    <div id="banner">Hello World</div>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function Student(first, last, age, interests, department) {
+            this.name = {
+                'first': first,
+                'last' : last
+            };
+            this.age = age;
+            this.interests = interests;
+            this.department = department;
+            this.bio = function() {
+                alert(this.name.first + ' ' + this.name.last + ' is ' + this.age + ' years old. I like ' + this.interests[0] + ' and ' + this.interests[1] + '.');
+            };
+            this.greeting = function() {
+                alert('Hi! I\'m ' + this.name.first + ' and I study in department of ' + this.department);
+            };
+        }
+
+        function runApp() {
+            var student1 = new Student('Hee Joung', 'Hwang',48, ['cycling','game'],'computer engineering');
+            student1.greeting();
+            //student1.bio();
+            alert(student1.interests[0]);
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <h2>w9p5.html</h2>
+    <hr>
+    <button type="button" onclick="runApp();">Run my JS App</button>
+
+    <p id="result"> </p>
+</body>
+</html>

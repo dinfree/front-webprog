@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        var msg = "Hello World";
+
+        function runApp() {
+            document.getElementById('r1').innerHTML = msg;
+            document.getElementsByClassName('r2')[0].innerHTML = msg; // 동작 안함. 리턴값이 배열임 [0] 처럼 접근해야 함.
+            document.getElementsByClassName('r2')[1].innerHTML = msg;
+            document.getElementsByTagName('div')[0].innerHTML = msg;
+        }
+    </script>
+</head>
+
+<body>
+
+    <h2>w9p4.html</h2>
+    <hr>
+    <button type="button" onclick="runApp();">Run my JS App</button>
+    <br>
+    R1: <span id="r1"> </span> <br>
+    R2: <span class="r2"> </span> <br>
+    R2: <span class="r2"> </span> <br>
+    DIV: <div> </div> <br>
+</body>
+</html>

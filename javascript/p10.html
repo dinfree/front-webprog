@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+        // Java Script
+        function showMsg() {
+            alert("hello javascript");
+            document.getElementById('result').innerHTML = "Hello JavaScript";
+        }
+
+        // jQuery
+        $(function() {
+            $("button:eq(1)").click(function() {
+                alert('hello jquery');
+                $('#result').html('Hello jQuery');
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <h2>w11p1.html</h2>
+    <hr>
+    <button type="button" onclick="showMsg();">Run my JS App</button>
+    <button type="button">Run my jQuery App</button>
+    <p></p>
+    <div id="result"></div>
+</body>
+</html>
