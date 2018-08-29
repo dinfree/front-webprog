@@ -1,4 +1,4 @@
-# [STS-10] 웹프로그래밍 :: 짧고 굵게 배우기
+# [STS-10] 웹프로그래밍 :: 짧고 굵게 배우기 
 
 [![Dinfree][din-badge]][din-url]
 [![Subject][html-badge]][din-url]
